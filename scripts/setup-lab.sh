@@ -3,7 +3,7 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 python3 -m venv .venv
-source .venv/bin/activate
+source .venv/Scripts/Activate
 python -m pip install -r ci/requirements.txt
 command -v aws >/dev/null
 command -v terraform >/dev/null
